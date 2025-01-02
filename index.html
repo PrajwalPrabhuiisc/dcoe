@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- [Previous head section remains exactly the same] -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D-CoE Newsletter</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* [Previous styles remain exactly the same] */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #334155;
+            background-color: #f8fafc;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+        }
+
+        .header-bg {
+            background: #ffffff;
+            position: relative;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .section-title {
+            position: relative;
+            padding-left: 1rem;
+            margin: 2rem 0 1rem;
+        }
+
+        .section-title::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: #3b82f6;
+            border-radius: 2px;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .team-card {
+            background: #f8fafc;
+            border-radius: 8px;
+            padding: 1.5rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+            border: 1px solid #e5e7eb;
+        }
+
+        .image-placeholder {
+        height: 25rem; /* Explicit height for the placeholder */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f8fafc;
+        border: 1px solid #e5e7eb;
+        border-radius: 8px;
+        overflow: hidden; /* Ensures the image doesn't overflow */
+    }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .stat-card {
+            background: #f8fafc;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .partner-logos {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            align-items: center;
+            margin: 2rem 0;
+        }
+
+        .logo-placeholder {
+            background: #f8fafc;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 80px;
+        }
+        .image-placeholder img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Ensures the image covers the container without distortion */
+        border-radius: 8px; /* Optional: adds rounded corners for consistency */
+    }
+        
+    </style>
+</head>
+<body class="min-h-screen">
+    <div class="container mx-auto my-8 rounded-xl shadow-lg overflow-hidden">
+        <header class="header-bg px-6 py-8">
+            <div class="flex items-center justify-between mb-4">
+                <img src="dcoe.jpg" alt="dcoe Logo" class="w-1/4">
+                <div>
+                    <h1 class="text-4xl font-bold text-gray-800">Introducing the D-CoE at IISc Bangalore</h1>
+                    <h5 class="text-2xl font-bold text-black-100">Transforming Design and Innovation in Karnataka</h5>
+                    <br>
+                    <p class="text-sm text-black-600 mt-2">Broadcast 1.3, Brought to you by the SA team IMPACTforImpact Lab.</p>
+                </div>
+            </div>
+        </header>   
+
+        <main class="p-8">
+            <div class="max-w-4xl mx-auto">
+                <h1 class="section-title text-2xl font-bold">D-CoE: Rooted in Design Excellence</h1>
+                <div class="mb-12">
+                    <p class="text-lg text-black-600 leading-relaxed">
+                        The D-CoE (Design Center of Excellence) stands as a testament to over six decades of pioneering design education at the Indian Institute of Science (IISc). Built on a legacy of innovation and expertise, it is committed to shaping the future of design while addressing the pressing needs of today’s industry and academia.          </p>
+                </div>
+
+                <div class="image-placeholder h-64 relative flex justify-center items-center bg-gray-100">
+                    <img src="iisc-mb.jpg" alt="Statue and Group">
+                </div>
+
+                <section class="mb-12">
+                    <h2 class="section-title text-2xl font-bold">A Legacy of Design Education</h2>
+                    <p class="text-gray-600 mb-6">At the heart of the D-CoE lies IISc's 60-year history of excellence in design education. This legacy includes:</p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="p-6 bg-white border border-gray-200 rounded-lg">
+                            <h3 class="font-semibold mb-3">Graduate-Level Courses</h3>
+                            <p class="text-gray-600">IISc's early adoption of advanced design courses positioned it as a leader in the academic design landscape.</p>
+                        </div>
+                        <div class="p-6 bg-white border border-gray-200 rounded-lg">
+                            <h3 class="font-semibold mb-3">The MDes Program</h3>
+                            <p class="text-gray-600">Over 26 years, the Master of Design program has produced industry trailblazers who hold leadership roles in top companies like Maruti and JCB. This program demonstrates IISc's ability to align education with real-world needs.</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-8">
+                        <h3 class="text-xl font-semibold mb-4">The Department of Design and Manufacturing</h3>
+                        <p class="text-gray-600 mb-6">Integral to IISc's contributions to design, recognized as one of India's top-ranked design schools, DM has set benchmarks in:</p>
+                        <div class="stats-grid">
+                            <div class="stat-card">
+                                <h3 class="font-semibold">Pioneering Education</h3>
+                                <p class="text-gray-600">Introduced India's first PhD program in design, setting benchmarks for academic and research excellence.</p>
+                            </div>
+                            <div class="stat-card">
+                                <h3 class="font-semibold">Industry Innovation</h3>
+                                <p class="text-gray-600">Delivered groundbreaking ideas that predate even global leaders like IDEO at Stanford.</p>
+                            </div>
+                            <div class="stat-card">
+                                <h3 class="font-semibold">Global Recognition</h3>
+                                <p class="text-gray-600">Consistently ranked among the top three art and design schools in India by QS rankings.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="image-placeholder h-64 relative flex justify-center items-center bg-gray-100">
+                    <img src="DM.jpg" alt="Statue and Group">
+                </div>
+
+                <!-- [Rest of the sections remain exactly the same] -->
+                <section class="mb-12">
+                    <h2 class="section-title text-2xl font-bold">Previous Broadcasts Overview</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-blue-50 p-6 rounded-lg border border-blue-100">
+                            <h3 class="font-semibold text-lg mb-3">
+                                <a href="Broadcast1.1.pdf" class="text-blue-600 hover:underline">Broadcast 1: Introduction to the D-CoE</a>
+                            </h3>
+                            <p class="text-gray-600">The Design Centre of Excellence (D-CoE) at IISc Bangalore was introduced as a collaboration with the Government of Karnataka. Positioned as a "School of Practice for Design," the D-CoE aims to transform Karnataka's innovation ecosystem by integrating academia, industry, and startups.</p>
+                        </div>
+                        <div class="bg-blue-50 p-6 rounded-lg border border-blue-100">
+                            <h3 class="font-semibold text-lg mb-3">
+                                <a href="Broadcast2.pdf" class="text-blue-600 hover:underline">Broadcast 2: Addressing Startup Challenges</a>
+                            </h3>
+                            <p class="text-gray-600">Highlighted the D-CoE's role in tackling the challenges faced by India's startup ecosystem, where 80% of startups fail within five years. The D-CoE addresses these challenges by equipping startups, MSMEs, and the workforce with advanced skills in Industry 4.0 technologies, prototyping, and business development.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="mb-12">
+                    <h2 class="section-title text-2xl font-bold">Meet Our Team</h2>
+                    <div class="team-grid">
+                        <div class="team-card">
+                            <div class="w-20 h-20 bg-gray-100 rounded-full mx-auto mb-4"></div>
+                            <h3 class="font-semibold">Dr. [Name Placeholder 1]</h3>
+                            <p class="text-sm text-gray-500">Director</p>
+                            <p class="text-gray-600 mt-2">20+ years in design innovation and academic leadership</p>
+                        </div>
+                        <div class="team-card">
+                            <div class="w-20 h-20 bg-gray-100 rounded-full mx-auto mb-4"></div>
+                            <h3 class="font-semibold">Prof. [Name Placeholder 2]</h3>
+                            <p class="text-sm text-gray-500">Head of Curriculum Development</p>
+                            <p class="text-gray-600 mt-2">Specialist in Industry 4.0 technologies</p>
+                        </div>
+                        <div class="team-card">
+                            <div class="w-20 h-20 bg-gray-100 rounded-full mx-auto mb-4"></div>
+                            <h3 class="font-semibold">Ms. [Name Placeholder 3]</h3>
+                            <p class="text-sm text-gray-500">Lead Industry Liaison</p>
+                            <p class="text-gray-600 mt-2">Connecting academia with startups and MSMEs</p>
+                        </div>
+                        <div class="team-card">
+                            <div class="w-20 h-20 bg-gray-100 rounded-full mx-auto mb-4"></div>
+                            <h3 class="font-semibold">Mr. [Name Placeholder 4]</h3>
+                            <p class="text-sm text-gray-500">Training Coordinator</p>
+                            <p class="text-gray-600 mt-2">Focused on hands-on learning and practical applications</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="mb-12">
+                    <h2 class="section-title text-2xl font-bold">Our Partners</h2>
+                    <div class="partner-logos">
+                        <img src="karnataka.png" alt="dcoe partner1" class="w-1/2">
+                        <img src="ktech.png" alt="dcoe partner2" class="w-1/2">
+                        <img src="iisc.png" alt="dcoe partner3" class="w-1/2">
+                        <img src="fsid.png" alt="dcoe partner4" class="w-1/2">
+                        <img src="dm.png" alt="dcoe partner5" class="w-1/2">
+                    </div>
+                </section>
+
+                <section class="mb-12">
+                    <h2 class="section-title text-2xl font-bold">Shaping the Future of Design</h2>
+                    <div class="image-placeholder h-64 relative flex justify-center items-center bg-gray-100">
+                        <img src="20241130_061838000_iOS.jpg" alt="Statue and Group">
+                    </div>
+                    <p class="text-gray-600">
+                        With its roots in IISc's rich history and its focus on the future, the D-CoE is uniquely positioned to redefine design education and practice. By combining tradition with modernity, it serves as a beacon for aspiring designers, industry professionals, and innovators alike.
+                    </p>
+                    <p class="text-gray-600 mt-4">
+                        The D-CoE is more than an institution; it is a movement that continues IISc's legacy of excellence while charting new paths in the ever-evolving world of design.
+                    </p>
+                </section>
+            </div>
+            
+        </main>
+
+        
+
+        <footer class="bg-gray-50 border-t border-gray-200 py-8 px-6">
+            <div class="max-w-3xl mx-auto text-center">
+                <p class="text-gray-600">&copy; 2024 D-CoE at IISc. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
