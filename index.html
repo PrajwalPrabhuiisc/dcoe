@@ -48,16 +48,59 @@
 
         .team-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
         }
 
         .team-card {
             background: #f8fafc;
-            border-radius: 8px;
+            border-radius: 12px;
             padding: 1.5rem;
             transition: transform 0.2s, box-shadow 0.2s;
             border: 1px solid #e5e7eb;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .profile-image-container {
+            width: 160px;
+            height: 160px;
+            margin-bottom: 1.5rem;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 3px solid #e5e7eb;
+        }
+
+        .profile-image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .team-card-content {
+            width: 100%;
+        }
+
+        .team-card h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #1f2937;
+        }
+
+        .team-card .role {
+            font-size: 1rem;
+            color: #4b5563;
+            margin-bottom: 0.75rem;
+            font-weight: 500;
+        }
+
+        .team-card .description {
+            font-size: 0.875rem;
+            color: #6b7280;
+            line-height: 1.5;
         }
 
         .image-placeholder {
@@ -170,12 +213,41 @@
                                 <p class="text-gray-600">Consistently ranked among the top three art and design schools in India by QS rankings.</p>
                             </div>
                         </div>
+                        <div class="image-placeholder h-64 relative flex justify-center items-center bg-gray-100">
+                            <img src="DM.jpg" alt="Statue and Group">
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <h3 class="text-xl font-semibold mb-4">Expertise and Practical Training</h3>
+                        <p class="text-gray-600 mb-6">Building on this foundation, the D-CoE serves as a "school of practice," combining academic rigor with real-world applications. Key pillars include:</p>
+                        <div class="stats-grid">
+                            <div class="stat-card">
+                                <h3 class="font-semibold">Experienced Faculty:</h3>
+                                <p class="text-gray-600">IISc’s seasoned educators ensure that the curriculum is innovative and industry-aligned.</p>
+                            </div>
+                            <div class="stat-card">
+                                <h3 class="font-semibold">Hands-On Learning</h3>
+                                <p class="text-gray-600">Programs emphasize practical training, bridging the gap between theoretical knowledge and market demands.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <h3 class="text-xl font-semibold mb-4">A Nodal Agency for Innovation</h3>
+                        <p class="text-gray-600 mb-6">Beyond education, the D-CoE plays a vital role in fostering innovation and collaboration within Karnataka’s ecosystem.  It:</p>
+                        <div class="stats-grid">
+                            <div class="stat-card">
+                                <h3 class="font-semibold">Supports MSMEs and Corporates: </h3>
+                                <p class="text-gray-600">Through training in design thinking, prototyping, and Industry 4.0 technologies, it empowers businesses to thrive in a connected world.</p>
+                            </div>
+                            <div class="stat-card">
+                                <h3 class="font-semibold">Promotes Collaboration</h3>
+                                <p class="text-gray-600">Acts as a bridge between academia, industry, and startups, creating a dynamic environment for innovation.</p>
+                            </div>
+                        </div>
                     </div>
                 </section>
 
-                <div class="image-placeholder h-64 relative flex justify-center items-center bg-gray-100">
-                    <img src="DM.jpg" alt="Statue and Group">
-                </div>
+
 
                 <!-- [Rest of the sections remain exactly the same] -->
                 <section class="mb-12">
@@ -197,37 +269,166 @@
                 </section>
 
                 <section class="mb-12">
-                    <h2 class="section-title text-2xl font-bold">Meet Our Team</h2>
+                    <h2 class="section-title text-2xl font-bold">Meet the D-CoE Team Behind the Vision</h2>
                     <div class="team-grid">
                         <div class="team-card">
-                            <div class="w-20 h-20 bg-gray-100 rounded-full mx-auto mb-4"></div>
-                            <h3 class="font-semibold">Dr. [Name Placeholder 1]</h3>
-                            <p class="text-sm text-gray-500">Director</p>
-                            <p class="text-gray-600 mt-2">20+ years in design innovation and academic leadership</p>
+                            <div class="profile-image-container">
+                                <img src="IMG_1116.jpeg" alt="Profile Image of Joshil Raj">
+                            </div>
+                            <div class="team-card-content">
+                                <h3>Joshil Raj</h3>
+                                <p class="role">CEO</p>
+                                <p class="description">Handles the Entire function of DCoE</p>
+                            </div>
                         </div>
+                        
                         <div class="team-card">
-                            <div class="w-20 h-20 bg-gray-100 rounded-full mx-auto mb-4"></div>
-                            <h3 class="font-semibold">Prof. [Name Placeholder 2]</h3>
-                            <p class="text-sm text-gray-500">Head of Curriculum Development</p>
-                            <p class="text-gray-600 mt-2">Specialist in Industry 4.0 technologies</p>
+                            <div class="profile-image-container">
+                                <img src="IMG_1040.jpeg" alt="Profile Image of Gayathri">
+                            </div>
+                            <div class="team-card-content">
+                                <h3>Gayathri</h3>
+                                <p class="role">Accountant</p>
+                                <p class="description">Handles all Financial transaction for DCoE</p>
+                            </div>
                         </div>
+                
                         <div class="team-card">
-                            <div class="w-20 h-20 bg-gray-100 rounded-full mx-auto mb-4"></div>
-                            <h3 class="font-semibold">Ms. [Name Placeholder 3]</h3>
-                            <p class="text-sm text-gray-500">Lead Industry Liaison</p>
-                            <p class="text-gray-600 mt-2">Connecting academia with startups and MSMEs</p>
+                            <div class="profile-image-container">
+                                <img src="IMG_1043.jpeg" alt="Profile Image of Gayathri">
+                            </div>
+                            <div class="team-card-content">
+                                <h3>Nishath</h3>
+                                <p class="role">Admin</p>
+                                <p class="description">Handles Bills and admin related activities for DCoE</p>
+                            </div>
                         </div>
+                
                         <div class="team-card">
-                            <div class="w-20 h-20 bg-gray-100 rounded-full mx-auto mb-4"></div>
-                            <h3 class="font-semibold">Mr. [Name Placeholder 4]</h3>
-                            <p class="text-sm text-gray-500">Training Coordinator</p>
-                            <p class="text-gray-600 mt-2">Focused on hands-on learning and practical applications</p>
+                            <div class="profile-image-container">
+                                <img src="IMG_1127.jpeg" alt="Profile Image of Gayathri">
+                            </div>
+                            <div class="team-card-content">
+                                <h3>Chytra</h3>
+                                <p class="role">HR</p>
+                                <p class="description">Handles Recruitment, Onboarding, Policies and Employee Engagement</p>
+                            </div>
+                        </div>
+                
+                        <div class="team-card">
+                            <div class="profile-image-container">
+                                <img src="IMG_1987.jpeg" alt="Profile Image of Gayathri">
+                            </div>
+                            <div class="team-card-content">
+                                <h3>Sakshitha</h3>
+                                <p class="role">Business Developer Trainee</p>
+                                <p class="description">Handles marketing activities, social media marketing for DCoE</p>
+                            </div>
+                        </div>
+                
+                        <div class="team-card">
+                            <div class="profile-image-container">
+                                <img src="IMG_1150.jpeg" alt="Profile Image of Gayathri">
+                            </div>
+                            <div class="team-card-content">
+                                <h3>Puneeth</h3>
+                                <p class="role">Inhouse Trainer</p>
+                                <p class="description">Delivers training for Design thinking, Industry 4.0 and Business Development and Entrepreneurship</p>
+                            </div>
+                        </div>
+                
+                        <div class="team-card">
+                            <div class="profile-image-container">
+                                <img src="IMG_0999.jpeg" alt="Profile Image of Gayathri">
+                            </div>
+                            <div class="team-card-content">
+                                <h3>Apala</h3>
+                                <p class="role">Inhouse Trainer</p>
+                                <p class="description">Delivers training for Electronic Prototyping and Ergonomics</p>
+                            </div>
+                        </div>
+                
+                        <div class="team-card">
+                            <div class="profile-image-container">
+                                <img src="IMG_1005.jpeg" alt="Profile Image of Gayathri">
+                            </div>
+                            <div class="team-card-content">
+                                <h3>Vijay Murali</h3>
+                                <p class="role">Inhouse Trainer</p>
+                                <p class="description">Delivers training for Ergonomics, Mechanical Prototyping and Business Development and Entrepreneurship</p>
+                            </div>
+                        </div>
+                
+                        <div class="team-card">
+                            <div class="profile-image-container">
+                                <img src="IMG_1135.jpeg" alt="Profile Image of Gayathri">
+                            </div>
+                            <div class="team-card-content">
+                                <h3>Laveen</h3>
+                                <p class="role">Inhouse Trainer</p>
+                                <p class="description">Delivers training for Design Prototype, Mechanical Prototype</p>
+                            </div>
+                        </div>
+                
+                        <div class="team-card">
+                            <div class="profile-image-container">
+                                <img src="IMG_0995.jpeg" alt="Profile Image of Gayathri">
+                            </div>
+                            <div class="team-card-content">
+                                <h3>Hunny</h3>
+                                <p class="role">Inhouse Trainer</p>
+                                <p class="description">Delivers training for Aesthetics and Semantics, Design thinking</p>
+                            </div>
+                        </div>
+                
+                        <div class="team-card">
+                            <div class="profile-image-container">
+                                <img src="IMG_1009.jpeg" alt="Profile Image of Gayathri">
+                            </div>
+                            <div class="team-card-content">
+                                <h3>Chethan</h3>
+                                <p class="role">Tech Support</p>
+                                <p class="description">Supports tech support for Industry 4.0 and Electronic prototyping and Business Development</p>
+                            </div>
+                        </div>
+                
+                        <div class="team-card">
+                            <div class="profile-image-container">
+                                <img src="IMG_1003.jpeg" alt="Profile Image of Gayathri">
+                            </div>
+                            <div class="team-card-content">
+                                <h3>Subramani</h3>
+                                <p class="role">Tech Support</p>
+                                <p class="description">Supports tech support for design thinking, Aesthetics and Semantics, Ergonomics and Human factor, design Prototype</p>
+                            </div>
+                        </div>
+                
+                        <div class="team-card">
+                            <div class="profile-image-container">
+                                <img src="IMG_1033.jpeg" alt="Profile Image of Gayathri">
+                            </div>
+                            <div class="team-card-content">
+                                <h3>Calvin</h3>
+                                <p class="role">Tech Support</p>
+                                <p class="description">Supports tech support for Aesthetics and Semantics, Design Prototyping, Mechanical Prototyping and Electronic Prototyping</p>
+                            </div>
+                        </div>
+                
+                        <div class="team-card">
+                            <div class="profile-image-container">
+                                <img src="IMG_1012.jpeg" alt="Profile Image of Gayathri">
+                            </div>
+                            <div class="team-card-content">
+                                <h3>Siva</h3>
+                                <p class="role">Tech Support</p>
+                                <p class="description">Supports tech support for Industry 4.0 and Design thinking, Ergonomics and Human factor</p>
+                            </div>
                         </div>
                     </div>
                 </section>
 
                 <section class="mb-12">
-                    <h2 class="section-title text-2xl font-bold">Our Partners</h2>
+                    <h2 class="section-title text-2xl font-bold">D-CoE Partners</h2>
                     <div class="partner-logos">
                         <img src="karnataka.png" alt="dcoe partner1" class="w-1/2">
                         <img src="ktech.png" alt="dcoe partner2" class="w-1/2">
@@ -238,7 +439,7 @@
                 </section>
 
                 <section class="mb-12">
-                    <h2 class="section-title text-2xl font-bold">Shaping the Future of Design</h2>
+                    <h2 class="section-title text-2xl font-bold">D-CoE Shaping the Future of Design</h2>
                     <div class="image-placeholder h-64 relative flex justify-center items-center bg-gray-100">
                         <img src="20241130_061838000_iOS.jpg" alt="Statue and Group">
                     </div>
